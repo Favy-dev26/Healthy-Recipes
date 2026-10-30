@@ -1,0 +1,612 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: floralwhite;
+color: darkslategray;
+line-height: 1.6;
+}
+
+img {
+max-width: 100%;
+display: block;
+}
+
+a {
+text-decoration: none;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 15px;
+background-color: white;
+border-bottom: 1px solid whitesmoke;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 8px;
+color: darkgreen;
+font-size: 18px;
+font-weight: bold;
+}
+
+.logo-symbol {
+font-size: 25px;
+}
+
+.menu-toggle {
+display: none;
+}
+
+.menu-button {
+display: flex;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+padding: 5px;
+}
+
+.menu-button span {
+display: block;
+width: 25px;
+height: 3px;
+background-color: darkgreen;
+border-radius: 3px;
+}
+
+.navigation {
+display: none;
+flex-direction: column;
+width: 100%;
+gap: 8px;
+margin-top: 15px;
+}
+
+.menu-toggle:checked ~ .navigation {
+display: flex;
+}
+
+.navigation a {
+color: darkslategray;
+display: block;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+}
+
+.navigation a:hover {
+background-color: honeydew;
+color: green;
+}
+
+.button {
+display: inline-block;
+padding: 12px 24px;
+background-color: darkgreen;
+color: white;
+border-radius: 6px;
+font-weight: bold;
+}
+
+.button:hover {
+background-color: seagreen;
+}
+
+.hero {
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 45px 6%;
+align-items: center;
+}
+
+.hero-text {
+width: 100%;
+}
+
+.hero-text h1 {
+color: darkgreen;
+font-size: 40px;
+line-height: 1.2;
+margin-top: 0;
+margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+color: #d98236;
+}
+
+.hero-text p {
+color: dimgray;
+font-size: 17px;
+margin-bottom: 25px;
+}
+
+.hero-image {
+width: 100%;
+}
+
+.hero-image img {
+width: 100%;
+height: 300px;
+object-fit: cover;
+border-radius: 14px;
+}
+
+.section-padding {
+padding: 45px 6%;
+}
+
+.section-title {
+text-align: left;
+color: darkgreen;
+font-size: 36px;
+margin-top: 0;
+margin-bottom: 30px;
+}
+
+.benefits {
+background-color: floralwhite;
+text-align: left;
+}
+
+.benefits-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 20px;
+}
+
+.benefit {
+padding: 15px 0px;
+background-color: transparent;
+border: none;
+border-radius: 0px;
+}
+
+.benefit-icon {
+width: 65px;
+height: 65px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 0 20px;
+border-radius: 24px;
+background-color: white;
+}
+
+.benefit-icon.orange {
+background-color: moccasin;
+}
+
+.benefit-icon.green {
+background-color: honeydew;
+}
+
+.benefit-icon.purple {
+background-color: lavender;
+}
+
+.benefit h3 {
+color: darkgreen;
+font-size: 30px;
+line-height: 1.3;
+margin-top: 0;
+margin-bottom: 20px;
+text-align: left;
+}
+
+.benefit p {
+color: dimgray;
+font-size: 20px;
+line-height: 1.6;
+margin-top: 0;
+margin-bottom: 15px;
+text-align: left;
+}
+
+.real-life {
+display: flex;
+flex-direction: column;
+gap: 25px;
+padding: 45px 6%;
+align-items: center;
+}
+
+.real-life-text {
+width: 100%;
+}
+
+.real-life-text h2 {
+color: darkgreen;
+font-size: 30px;
+margin-top: 0;
+}
+
+.real-life-text p {
+color: dimgray;
+}
+
+.real-life-image {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 12px;
+}
+
+.cta-section {
+padding: 50px 25px;
+margin: 25px;
+text-align: center;
+background-color: #E9F0E9;
+border-radius: 20px;
+}
+
+.cta-section h2 {
+color: darkgreen;
+font-size: 34px;
+line-height: 1.3;
+margin-top: 0;
+}
+
+.cta-section p {
+color: dimgray;
+margin-bottom: 25px;
+}
+
+.footer {
+background-color: floralwhite;
+color: darkgreen;
+text-align: center;
+padding: 30px 20px;
+}
+
+.footer-logo {
+color: darkgreen;
+font-size: 20px;
+font-weight: bold;
+}
+
+.social-links {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 22px;
+margin: 20px 0;
+}
+
+.social-links a {
+color: darkgreen;
+font-size: 28px;
+}
+
+.social-links a:hover {
+color: seagreen;
+}
+
+.footer p {
+color: darkslategray;
+margin-bottom: 0;
+}
+
+.recipes-intro {
+text-align: center;
+padding: 30px 15px 15px;
+max-width: 800px;
+margin: auto;
+}
+
+.recipes-intro h1 {
+color: darkgreen;
+font-size: 28px;
+margin-bottom: 10px;
+}
+
+.recipes-intro p {
+color: dimgray;
+font-size: 14px;
+}
+
+.recipe-tools {
+padding: 15px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+.filter-options {
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.filter-options select {
+padding: 9px;
+border: 1px solid lightgray;
+border-radius: 6px;
+background-color: white;
+}
+
+.search-form {
+display: flex;
+gap: 8px;
+}
+
+.search-form input {
+padding: 10px;
+border: 1px solid lightgray;
+border-radius: 6px;
+}
+
+.search-form button {
+padding: 10px 15px;
+background-color: darkgreen;
+color: white;
+border: none;
+border-radius: 6px;
+}
+
+.recipe-grid {
+display: grid;
+grid-template-columns: repeat(3, minmax(0, 1fr));
+gap: 20px;
+padding: 20px;
+}
+
+.recipe-card {
+background-color: white;
+border: 1px solid whitesmoke;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.recipe-card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+display: block;
+}
+
+.recipe-info {
+padding: 12px;
+}
+
+.recipe-info h2 {
+color: darkslategray;
+font-size: 16px;
+margin: 0 0 8px;
+}
+
+.recipe-info p {
+color: dimgray;
+font-size: 12px;
+margin-bottom: 12px;
+}
+
+.recipe-meta {
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+font-size: 11px;
+margin-bottom: 12px;
+}
+
+.recipe-details summary {
+background-color: darkgreen;
+color: white;
+text-align: center;
+padding: 9px;
+border-radius: 20px;
+cursor: pointer;
+list-style: none;
+font-size: 12px;
+}
+
+.recipe-details summary:hover {
+background-color: seagreen;
+}
+
+.recipe-expanded {
+padding: 10px 0;
+font-size: 13px;
+}
+
+.site-footer {
+background-color: floralwhite;
+color: darkgreen;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+padding: 25px;
+margin-top: 30px;
+}
+
+.footer-socials {
+display: flex;
+gap: 15px;
+}
+
+.footer-socials a {
+color: darkgreen;
+text-decoration: none;
+font-size: 18px;
+}
+
+.footer-socials a:hover {
+color: seagreen;
+}
+
+.recipes-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 20px;
+padding: 18px 5%;
+background-color: floralwhite;
+border-bottom: 1px solid whitesmoke;
+flex-wrap: wrap;
+max-width: 100%;
+}
+
+.recipes-header .brand {
+display: flex;
+align-items: center;
+gap: 8px;
+color: darkslategray;
+font-size: 18px;
+font-weight: bold;
+text-decoration: none;
+white-space: nowrap;
+}
+
+.recipes-header .brand-icon {
+font-size: 25px;
+}
+
+.recipes-header #recipe-menu-toggle {
+display: none;
+}
+
+.recipes-header .menu-icon {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+}
+
+.recipes-header .menu-icon span {
+display: block;
+width: 25px;
+height: 3px;
+background-color: darkslategray;
+border-radius: 3px;
+}
+
+.recipes-header .site-nav {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+max-width: 100%;
+gap: 15px;
+}
+
+.recipes-header .site-nav a {
+color: darkslategray;
+font-size: 14px;
+text-decoration: none;
+}
+
+.recipes-header .site-nav a:hover,
+.recipes-header .site-nav a.active {
+color: seagreen;
+}
+
+.recipes-header .site-nav .nav-button {
+padding: 12px 18px;
+background-color: darkslategray;
+color: white;
+border-radius: 7px;
+}
+
+.recipes-header .site-nav .nav-button:hover {
+background-color: seagreen;
+color: white;
+}
+
+@media screen and (min-width: 1024px) {
+
+    /* HEADER */
+    .home-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-header .navigation {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .home-header .menu-button {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 1100px;
+    }
+
+    .hero-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .benefits-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+    }
+
+    .real-life {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .real-life-text {
+        flex: 1;
+    }
+
+    .real-life-image {
+        display: block;
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .cta-section {
+        text-align: center;
+        padding: 50px 30px;
+    }
+
+}
+
+.student-info {
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 5px;
+  background: floralwhite;
+  color: #253347;
+  font-size: 14px;
+  line-height: 2;
+}
